@@ -8,6 +8,7 @@
       <li class="nav-item" v-bind:class="{active: tab === 'RSVP'}" v-on:click="Navigate('RSVP')">RSVP</li>
       <li class="nav-item" v-bind:class="{active: tab === 'Registry'}" v-on:click="Navigate('Registry')">Registry</li>
       <li
+        v-on:click="$emit('theme')"
         class="nav-item"
         id="themeButton"
       >
