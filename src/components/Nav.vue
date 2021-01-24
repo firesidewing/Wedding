@@ -159,6 +159,7 @@ export default {
     display: inline;
     margin:auto;
     font-size:1.2rem;
+    
   }
   .names-long {
     display: none;    

@@ -2,12 +2,11 @@
   <main class="hello">
     <section class="top-banner-section">
       <div class="banner-image-div">
-        <img
-          class="banner-image hidden"
-          id="hero"
-          src="@/assets/Hero-min.jpg"
-          alt="Banner Image"          
-        />
+        <picture id="hero" class="banner-image hidden">
+          <source media="(min-width:600px)" srcset="@/assets/Hero-min.jpg">
+          <source media="(max-width:600px)" srcset="@/assets/Hero-min-small.jpg">
+          <img src="@/assets/Hero-min.jpg" >
+        </picture>
       </div>
 
       <div id="over" class="banner-overlay-div"></div>
@@ -69,12 +68,19 @@ export default {
 
 .banner-image {
   display: grid;
+  height:100%;
+  
+  transition: opacity 2s ease-in;
+}
+.banner-image img{
+  object-fit: cover;
+  object-position: right;
   min-width: 350px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: right;
-  transition: opacity 2s ease-in;
+}
+.banner-image source {
+  display: none;
 }
 
 .hidden {
