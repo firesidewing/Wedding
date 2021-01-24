@@ -165,7 +165,7 @@ export default {
   }
   .navbar {
     flex-direction: column;
-    height: 12vh;
+    height: 13vh;
   }
   main {
     margin-top:-1rem;

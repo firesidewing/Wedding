@@ -3,14 +3,14 @@
     <section class="top-banner-section">
       <div class="banner-image-div">
         <img
-          class="banner-image"
+          class="banner-image hidden"
           id="hero"
           src="@/assets/Hero-min.jpg"
           alt="Banner Image"          
         />
       </div>
 
-      <div class="banner-overlay-div"></div>
+      <div id="over" class="banner-overlay-div"></div>
 
       <div class="banner-text-div">
         <span>May 23rd 2021</span>
@@ -31,13 +31,9 @@ export default {
   name: "Home",
   mounted() {
     let img = document.getElementById('hero')
-    img.onload = ImgLoad
+    setTimeout(() => img.classList.remove('hidden'), 100)
   }
 };
-
-function ImgLoad() {
-  this.classList.remove('fade')
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -55,9 +51,11 @@ function ImgLoad() {
 
 .banner-image-div {
   grid-area: 1 / 1 / 2 / 2;
+  z-index: 1;
 }
 .banner-overlay-div {
   grid-area: 1 / 1 / 2 / 2;
+  z-index: 2;
 }
 .banner-text-div {
   grid-area: 1 / 1 / 2 / 2;
@@ -66,6 +64,7 @@ function ImgLoad() {
   font-weight:bolder;
   color: #b6b6b6;
   text-align: center;
+  z-index: 3;
 }
 
 .banner-image {
@@ -75,7 +74,7 @@ function ImgLoad() {
   height: 100%;
   object-fit: cover;
   object-position: right;
-  transition: opacity 2s;
+  transition: opacity 2s ease-in;
 }
 
 .hidden {
@@ -123,9 +122,9 @@ function ImgLoad() {
 
 @media only screen and (max-width: 600px) {
   .top-banner-section{
-    height:88vh;
+    height:87vh;
     margin: 0;
-    grid-template-rows: 88vh;
+    grid-template-rows: 87vh;
   }
   main{
     padding:0;
