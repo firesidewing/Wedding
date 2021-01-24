@@ -4,8 +4,9 @@
       <div class="banner-image-div">
         <img
           class="banner-image"
-          src="@/assets/Hero.jpg"
-          alt="Banner Image"
+          id="hero"
+          src="@/assets/Hero-min.jpg"
+          alt="Banner Image"          
         />
       </div>
 
@@ -28,7 +29,15 @@
 <script>
 export default {
   name: "Home",
+  mounted() {
+    let img = document.getElementById('hero')
+    img.onload = ImgLoad
+  }
 };
+
+function ImgLoad() {
+  this.classList.remove('fade')
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -65,7 +74,12 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: right;;
+  object-position: right;
+  transition: opacity 2s;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .banner-overlay-div {
