@@ -85,7 +85,7 @@ export default {
   display: grid;
   max-width: 100%;
   background: black;
-  background: rgba(0, 0, 0, 0.76);
+  background: rgba(0, 0, 0, 0.56);
 }
 
 .map-link {
