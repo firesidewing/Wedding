@@ -7,7 +7,7 @@
       </p>
       <p>Please respond by (yada yada)</p>
     </div>
-    <form name="rsvp" data-netlify-recaptcha="true" data-netlify="true">
+    <form name="rsvp" method="POST" data-netlify-recaptcha="true" netlify>
       <div>
         <label
           >First Name<input type="text" class="control" name="first-name"

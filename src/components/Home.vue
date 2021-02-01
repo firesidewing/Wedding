@@ -12,8 +12,8 @@
       <div id="over" class="banner-overlay-div"></div>
 
       <div class="banner-text-div">
-        <p>Josh & Tess <br/> Are Getting Married</p>
-        <p>May 23rd 2021</p>
+        <p class="diff">Josh & Tess</p>
+        <p class="small">May 23rd 2021</p>
         <p>
           <a class="map-link" href="https://goo.gl/maps/YQdVBMBpsmZ9Fpog6" target="_blank">
             <i class="gg-pin"></i>
@@ -38,6 +38,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.diff{
+  font-family: 'Poiret One', cursive;
+  font-size: 3rem;
+}
+.small{
+  font-size:1rem;
+}
 .top-banner-section {
   display: grid;
   grid-template-columns: 1fr;
@@ -101,6 +108,7 @@ export default {
   align-items: center;
   text-decoration: none;
   color: #b6b6b6;
+  font-size:1.5rem;
 }
 
 .gg-pin {
