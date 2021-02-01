@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <Nav v-on:theme="ToggleTheme" v-bind:tab.sync="tab" />
-    <Home v-if="tab === 'Home'" />
-    <Info v-else-if="tab === 'Info'" />
-    <RSVP v-else-if="tab === 'RSVP'" />
-    <Registry v-else-if="tab === 'Registry'" />
+    <Home v-show="tab === 'Home'" />
+    <Info v-show="tab === 'Info'" />
+    <RSVP v-show="tab === 'RSVP'" />
+    <Registry v-show="tab === 'Registry'" />
     <Footer/>
   </div>
 </template>
@@ -29,7 +29,7 @@ export default {
   },
   data() {
     return {
-      Theme: "dark",
+      Theme: "light",
       ThemeMap: {
         dark: "light",
         light: "solar",
@@ -74,6 +74,8 @@ const bodyClass = document.body.classList;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
   --transition-speed: 300ms;
+  --btn: #F08E80;
+  --control: #576e75;
 }
 
 body {
@@ -112,6 +114,7 @@ main {
   --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
+  --control: #b6b6b6;
 }
 
 .light {
@@ -119,6 +122,7 @@ main {
   --text-secondary: #000000;
   --bg-primary: #ffffff;
   --bg-secondary: #e4e4e4;
+  --control: #9E9E9E;
 }
 
 .solar {
@@ -126,6 +130,7 @@ main {
   --text-secondary: #35535c;
   --bg-primary: #fdf6e3;
   --bg-secondary: #f5e5b8;
+  --control:  #576e75;
 }
 
 .theme-icon {

@@ -12,13 +12,14 @@
       <div id="over" class="banner-overlay-div"></div>
 
       <div class="banner-text-div">
-        <span>May 23rd 2021</span>
+        <p>Josh & Tess <br/> Are Getting Married</p>
+        <p>May 23rd 2021</p>
         <p>
           <a class="map-link" href="https://goo.gl/maps/YQdVBMBpsmZ9Fpog6" target="_blank">
             <i class="gg-pin"></i>
             <span>Directions</span>
           </a>
-        </p>        
+        </p>  
       </div>
       
     </section>
@@ -96,7 +97,7 @@ export default {
 
 .map-link {
   display:flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-decoration: none;
   color: #b6b6b6;
