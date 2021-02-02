@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar">
-    <span class="names-long">Josh & Tess</span>
-    <span class="names-short">J & T</span>
+    <span class="names-long" v-on:click="Navigate('Home')" >Josh & Tess</span>
+    <span class="names-short" v-on:click="Navigate('Home')">J & T</span>
     <ul class="navbar-nav">
-      <li class="nav-item" v-bind:class="{active: tab === 'Home'}" v-on:click="Navigate('Home')">Home</li>
+      <li class="nav-item" v-bind:class="{active: tab === 'Story'}" v-on:click="Navigate('Story')">Story</li>
       <li class="nav-item" v-bind:class="{active: tab === 'Info'}" v-on:click="Navigate('Info')">Info</li>
       <li class="nav-item" v-bind:class="{active: tab === 'RSVP'}" v-on:click="Navigate('RSVP')">RSVP</li>
       <li class="nav-item" v-bind:class="{active: tab === 'Registry'}" v-on:click="Navigate('Registry')">Registry</li>
@@ -145,12 +145,14 @@ export default {
 
 .names-short {
     display: none;
+    cursor: pointer;
   }
 .names-long {
   display: inline;
   margin:auto;
   font-size:1.2rem;
   flex:1;
+  cursor: pointer;
 }
 
 /* Small screens */

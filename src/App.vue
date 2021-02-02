@@ -2,6 +2,7 @@
   <div id="app">
     <Nav v-on:theme="ToggleTheme" v-bind:tab.sync="tab" />
     <Home v-show="tab === 'Home'" />
+    <Story v-show="tab === 'Story'" />
     <Info v-show="tab === 'Info'" />
     <RSVP v-show="tab === 'RSVP'" />
     <Registry v-show="tab === 'Registry'" />
@@ -12,6 +13,7 @@
 <script>
 import Nav from "./components/Nav.vue";
 import Home from "./components/Home.vue";
+import Story from "./components/Story.vue";
 import Info from "./components/Info.vue";
 import RSVP from "./components/RSVP.vue";
 import Registry from "./components/Registry.vue";
@@ -22,6 +24,7 @@ export default {
   components: {
     Nav,
     Home,
+    Story,
     Info,
     RSVP,
     Registry,

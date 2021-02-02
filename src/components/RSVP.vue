@@ -7,7 +7,7 @@
       </p>
       <p>Please respond by (yada yada)</p>
     </div>
-    <form name="rsvp" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+    <form name="rsvp" method="POST" data-netlify="true">
       <div>
         <label
           >First Name<input type="text" class="control" name="first-name"
@@ -31,7 +31,7 @@
           </label>
           <label>
             No
-            <input type="radio" name="attending" value="Not Attending" />
+            <input type="radio" name="not-attending" value="Not Attending" />
           </label>
         </label>
         <label
