@@ -3,6 +3,7 @@
     <div class="image--container">
       <h1 class="loader" v-if="loading">Loading...</h1>
       <img
+        lazy="true"
         src="@/assets/1.jpg"
         @click="selected = 1"
         v-if="selected == 1"
@@ -12,111 +13,107 @@
         }"
       />
       <img
+        lazy="true"
         src="@/assets/2.jpg"
         @click="selected = 2"
         v-if="selected == 2"
-        v-bind:class="{ 'animate-entrance': selected == 2, 'image--gallery': selected == 2, }"
+        v-bind:class="{
+          'animate-entrance': selected == 2,
+          'image--gallery': selected == 2,
+        }"
       />
       <img
+        lazy="true"
         src="@/assets/3.jpg"
         @click="selected = 3"
         v-if="selected == 3"
-        v-bind:class="{ 'animate-entrance': selected == 3, 'image--gallery': selected == 3 }"
+        v-bind:class="{
+          'animate-entrance': selected == 3,
+          'image--gallery': selected == 3,
+        }"
       />
       <img
+        lazy="true"
         src="@/assets/4.jpg"
         @click="selected = 4"
         v-if="selected == 4"
-        v-bind:class="{ 'animate-entrance': selected == 4, 'image--gallery': selected == 4 }"
+        v-bind:class="{
+          'animate-entrance': selected == 4,
+          'image--gallery': selected == 4,
+        }"
       />
       <img
+        lazy="true"
         src="@/assets/5.jpg"
         @click="selected = 5"
         v-if="selected == 5"
-        v-bind:class="{ 'animate-entrance': selected == 5, 'image--gallery': selected == 5 }"
+        v-bind:class="{
+          'animate-entrance': selected == 5,
+          'image--gallery': selected == 5,
+        }"
       />
       <img
+        lazy="true"
         src="@/assets/6.jpg"
         @click="selected = 6"
         v-if="selected == 6"
-        v-bind:class="{ 'animate-entrance': selected == 6, 'image--gallery': selected == 6 }"
+        v-bind:class="{
+          'animate-entrance': selected == 6,
+          'image--gallery': selected == 6,
+        }"
       />
       <img
+        lazy="true"
         src="@/assets/7.jpg"
         @click="selected = 7"
         v-if="selected == 7"
-        v-bind:class="{ 'animate-entrance': selected == 7, 'image--gallery': selected == 7 }"
+        v-bind:class="{
+          'animate-entrance': selected == 7,
+          'image--gallery': selected == 7,
+        }"
       />
       <img
+        lazy="true"
         src="@/assets/8.jpg"
         @click="selected = 8"
         v-if="selected == 8"
-        v-bind:class="{ 'animate-entrance': selected == 8, 'image--gallery': selected == 8 }"
+        v-bind:class="{
+          'animate-entrance': selected == 8,
+          'image--gallery': selected == 8,
+        }"
       />
       <img
+        lazy="true"
         src="@/assets/9.jpg"
         @click="selected = 9"
         v-if="selected == 9"
-        v-bind:class="{ 'animate-entrance': selected == 9, 'image--gallery': selected == 9 }"
+        v-bind:class="{
+          'animate-entrance': selected == 9,
+          'image--gallery': selected == 9,
+        }"
       />
       <img
+        lazy="true"
         src="@/assets/10.jpg"
         @click="selected = 10"
         v-if="selected == 10"
-        v-bind:class="{ 'animate-entrance': selected == 10, 'image--gallery': selected == 10 }"
+        v-bind:class="{
+          'animate-entrance': selected == 10,
+          'image--gallery': selected == 10,
+        }"
       />
     </div>
     <div class="image--selection">
-      <img
-        src="@/assets/1-min.jpg"
-        @click="selected = 1"
-        class="image__item"
-      />
-      <img
-        src="@/assets/2-min.jpg"
-        class="image__item"
-        @click="selected = 2"        
-      />
-      <img
-        src="@/assets/3.jpg"
-        class="image__item"
-        @click="selected = 3"        
-      />
-      <img
-        src="@/assets/4.jpg"
-        class="image__item"
-        @click="selected = 4"        
-      />
-      <img
-        src="@/assets/5.jpg"
-        class="image__item"
-        @click="selected = 5"        
-      />
-      <img
-        src="@/assets/6.jpg"
-        class="image__item"
-        @click="selected = 6"        
-      />
-      <img
-        src="@/assets/7.jpg"
-        class="image__item"
-        @click="selected = 7"        
-      />
-      <img
-        src="@/assets/8.jpg"
-        class="image__item"
-        @click="selected = 8"        
-      />
-      <img
-        src="@/assets/9.jpg"
-        class="image__item"
-        @click="selected = 9"        
-      />
-      <img
-        src="@/assets/10.jpg"
-        class="image__item"
-        @click="selected = 10"        
-      />
+      <img src="@/assets/1-min.jpg" @click="selected = 1" class="image__item" />
+      <img src="@/assets/2-min.jpg" class="image__item" @click="selected = 2" />
+      <img src="@/assets/3.jpg" class="image__item" @click="selected = 3" />
+      <img src="@/assets/4.jpg" class="image__item" @click="selected = 4" />
+      <img src="@/assets/5.jpg" class="image__item" @click="selected = 5" />
+      <img src="@/assets/6.jpg" class="image__item" @click="selected = 6" />
+      <img src="@/assets/7.jpg" class="image__item" @click="selected = 7" />
+      <img src="@/assets/8.jpg" class="image__item" @click="selected = 8" />
+      <img src="@/assets/9.jpg" class="image__item" @click="selected = 9" />
+      <img src="@/assets/10.jpg" class="image__item" @click="selected = 10" />
     </div>
   </div>
 </template>

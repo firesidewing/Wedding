@@ -31,7 +31,7 @@
           </label>
           <label>
             No
-            <input type="radio" name="not-attending" value="Not Attending" />
+            <input type="radio" name="attending" value="Not Attending" />
           </label>
         </label>
         <label
