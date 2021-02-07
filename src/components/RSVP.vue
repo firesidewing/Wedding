@@ -130,7 +130,7 @@ export default {
           ...this.form,
         }),
       })
-        .then(() => (window.location.href = "/thank-you/"))
+        .then(() => (console.log("thank-you")))
         .catch((error) => alert(error));
       this.resetForm();
     },
