@@ -14,28 +14,33 @@
       netlify-honeypot="bot-field"
       @submit.prevent="handleSubmit"
     >
+      <p class="hidden">
+        <label
+          >Don’t fill this out if you’re human: <input name="bot-field"
+        /></label>
+      </p>
       <input type="hidden" name="form-name" value="rsvp" />
       <div>
         <label
           >First Name<input
             type="text"
             class="control"
-            name="first-name"
-            v-model="form.firstName"
+            name="firstname"
+            v-model="form.firstname"
         /></label>
         <label
           >Last Name<input
             type="text"
             class="control"
-            name="last-name"
-            v-model="form.lastName"
+            name="lastname"
+            v-model="form.lastname"
         /></label>
         <label>
           How Many in Your Party<input
             type="number"
             class="control"
-            name="number"
-            v-model.number="form.numParty"
+            name="num"
+            v-model.number="form.num"
           />
         </label>
         <label
@@ -83,16 +88,16 @@
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
 
 export default {
   name: "RSVP",
   data() {
     return {
       form: {
-        firstName: "",
-        lastName: "",
-        numParty: 0,
+        firstname: "",
+        lastname: "",
+        num: 0,
         email: "",
         attending: "",
         diet: "",
@@ -111,22 +116,22 @@ export default {
     encode(data) {
       return Object.keys(data)
         .map(
-          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+          (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
         )
         .join("&");
     },
-    handleSubmit() {
-      const axiosConfig = {
-        header: { "Content-Type": "application/x-www-form-urlencoded" },
-      };
-      axios.post(
-        "/",
-        this.encode({
-          "form-name": "rsvp",
+    handleSubmit(event) {
+      event.preventDefault();
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: this.encode({
+          "form-name": event.target.getAttribute("name"),
           ...this.form,
         }),
-        axiosConfig
-      );
+      })
+        .then(() => (window.location.href = "/thank-you/"))
+        .catch((error) => alert(error));
       this.resetForm();
     },
   },
@@ -177,5 +182,8 @@ button[type="submit"] {
   outline: none;
   color: white;
   font-size: 1.25rem;
+}
+.hidden {
+  display:none;
 }
 </style>
