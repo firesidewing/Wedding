@@ -20,6 +20,15 @@
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+    <form name="rsvp" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="first-name" />
+      <input type="text" name="last-name" />
+      <input type="number" name="number" />
+      <input type="email" name="email" />
+      <input type="radio" name="attending" />
+      <input type="text" name="diet" />
+      <button type="submit">Send</button>
+    </form>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>

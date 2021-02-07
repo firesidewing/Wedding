@@ -7,7 +7,12 @@
       </p>
       <p>Please respond by (yada yada)</p>
     </div>
-    <form name="rsvp" method="POST" data-netlify="true">
+    <form name="rsvp" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input
+        type="hidden"
+        name="form-name"
+        value="ask-question"
+      >
       <div>
         <label
           >First Name<input type="text" class="control" name="first-name"
