@@ -1,5 +1,12 @@
 <template>
   <div class="rsvp">
+    <div id="myModal" class="modal" v-if="success">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>Thank you for letting us know!</p>
+        </div>
+      </div>
+    </div>
     <div class="center">
       <p>
         Happy to have you come, Lorem ipsum dolor sit amet, consectetur
@@ -14,11 +21,6 @@
       netlify-honeypot="bot-field"
       @submit.prevent="handleSubmit"
     >
-      <p class="hidden">
-        <label
-          >Don’t fill this out if you’re human: <input name="bot-field"
-        /></label>
-      </p>
       <input type="hidden" name="form-name" value="rsvp" />
       <div>
         <label
@@ -102,13 +104,14 @@ export default {
         attending: "",
         diet: "",
       },
+      success: false,
     };
   },
   methods: {
     resetForm() {
-      this.$set(this.form, "firstName", "");
-      this.$set(this.form, "lastName", "");
-      this.$set(this.form, "numParty", 0);
+      this.$set(this.form, "firstname", "");
+      this.$set(this.form, "lastname", "");
+      this.$set(this.form, "num", 0);
       this.$set(this.form, "email", "");
       this.$set(this.form, "attending", "");
       this.$set(this.form, "diet", "");
@@ -130,7 +133,10 @@ export default {
           ...this.form,
         }),
       })
-        .then(() => (console.log("thank-you")))
+        .then(() => {
+          this.success = true
+          setTimeout(() => this.success = false, 3000)
+        })
         .catch((error) => alert(error));
       this.resetForm();
     },
@@ -184,6 +190,79 @@ button[type="submit"] {
   font-size: 1.25rem;
 }
 .hidden {
-  display:none;
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  display: flex;justify-content: center;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
