@@ -118,10 +118,11 @@ export default {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  max-width: 1000px;
   width: 100vw;
   height:6vh;
   margin:auto;
+  z-index: 100;
+  background: var(--bg-primary);
 }
 .navbar-nav {
   flex: 1;
@@ -153,6 +154,7 @@ export default {
   font-size:1.2rem;
   flex:1;
   cursor: pointer;
+  text-align: center;
 }
 
 /* Small screens */

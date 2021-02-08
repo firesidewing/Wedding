@@ -8,11 +8,9 @@
       </div>
     </div>
     <div class="center">
-      <p>
-        Happy to have you come, Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit.
-      </p>
-      <p>Please respond by (yada yada)</p>
+      <p class="p1 f2">Hope you can make it!</p>
+      <p>We will be closely monitoring COVID restrictions and will adhere to provincial guidlines for our wedding.</p>
+      <p>Please respond by April 23, 2021</p>
     </div>
     <form
       name="rsvp"
@@ -151,6 +149,12 @@ form div {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
 }
+.p1{
+  font-family: 'Poiret One', cursive;
+}
+.f2{
+  font-size: 2rem;
+}
 .rsvp {
   padding: 1rem;
   display: flex;
@@ -188,6 +192,8 @@ button[type="submit"] {
   outline: none;
   color: white;
   font-size: 1.25rem;
+  border-radius: 0.25rem;
+  font-family: 'Trirong';
 }
 .hidden {
   display: none;

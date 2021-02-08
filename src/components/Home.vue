@@ -12,14 +12,9 @@
       <div id="over" class="banner-overlay-div"></div>
 
       <div class="banner-text-div">
-        <p class="diff">Josh & Tess</p>
-        <p class="small">May 23rd 2021</p>
-        <p>
-          <a class="map-link" href="https://goo.gl/maps/YQdVBMBpsmZ9Fpog6" target="_blank">
-            <i class="gg-pin"></i>
-            <span>Directions</span>
-          </a>
-        </p>  
+        <span class="diff">Josh & Tess</span> <br/>
+        <span class="small p1">are getting married!</span> <br/>
+        <span class="smaller">May 23, 2021</span>         
       </div>
       
     </section>
@@ -43,7 +38,13 @@ export default {
   font-size: 3rem;
 }
 .small{
-  font-size:1rem;
+  font-size:1.5rem;
+}
+.smaller {
+  font-size: 1rem;
+}
+.p1{
+  font-family: 'Poiret One', cursive;
 }
 .top-banner-section {
   display: grid;
@@ -102,38 +103,7 @@ export default {
   background: rgba(0, 0, 0, 0.56);
 }
 
-.map-link {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #b6b6b6;
-  font-size:1.5rem;
-}
 
-.gg-pin {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: rotate(45deg) scale(var(--ggs,1));
-    width: 18px;
-    height: 18px;
-    border-radius: 100% 100% 0 100%;
-    border: 2px solid;
-    margin-top: -4px
-}
-.gg-pin::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border: 2px solid;
-    top: 3px;
-    left: 3px;
-    border-radius: 40px
-}
 
 @media only screen and (max-width: 600px) {
   .top-banner-section{

@@ -1,119 +1,96 @@
 <template>
-  <div class="gallery">
-    <div class="image--container">
-      <h1 class="loader" v-if="loading">Loading...</h1>
-      <img
-        lazy="true"
-        src="@/assets/1.jpg"
-        @click="selected = 1"
-        v-if="selected == 1"
-        v-bind:class="{
-          'animate-entrance': selected == 1,
-          'image--gallery': selected == 1,
-        }"
-      />
-      <img
-        lazy="true"
-        src="@/assets/2.jpg"
-        @click="selected = 2"
-        v-if="selected == 2"
-        v-bind:class="{
-          'animate-entrance': selected == 2,
-          'image--gallery': selected == 2,
-        }"
-      />
-      <img
-        lazy="true"
-        src="@/assets/3.jpg"
-        @click="selected = 3"
-        v-if="selected == 3"
-        v-bind:class="{
-          'animate-entrance': selected == 3,
-          'image--gallery': selected == 3,
-        }"
-      />
-      <img
-        lazy="true"
-        src="@/assets/4.jpg"
-        @click="selected = 4"
-        v-if="selected == 4"
-        v-bind:class="{
-          'animate-entrance': selected == 4,
-          'image--gallery': selected == 4,
-        }"
-      />
-      <img
-        lazy="true"
-        src="@/assets/5.jpg"
-        @click="selected = 5"
-        v-if="selected == 5"
-        v-bind:class="{
-          'animate-entrance': selected == 5,
-          'image--gallery': selected == 5,
-        }"
-      />
-      <img
-        lazy="true"
-        src="@/assets/6.jpg"
-        @click="selected = 6"
-        v-if="selected == 6"
-        v-bind:class="{
-          'animate-entrance': selected == 6,
-          'image--gallery': selected == 6,
-        }"
-      />
-      <img
-        lazy="true"
-        src="@/assets/7.jpg"
-        @click="selected = 7"
-        v-if="selected == 7"
-        v-bind:class="{
-          'animate-entrance': selected == 7,
-          'image--gallery': selected == 7,
-        }"
-      />
-      <img
-        lazy="true"
-        src="@/assets/8.jpg"
-        @click="selected = 8"
-        v-if="selected == 8"
-        v-bind:class="{
-          'animate-entrance': selected == 8,
-          'image--gallery': selected == 8,
-        }"
-      />
-      <img
-        lazy="true"
-        src="@/assets/9.jpg"
-        @click="selected = 9"
-        v-if="selected == 9"
-        v-bind:class="{
-          'animate-entrance': selected == 9,
-          'image--gallery': selected == 9,
-        }"
-      />
-      <img
-        lazy="true"
-        src="@/assets/10.jpg"
-        @click="selected = 10"
-        v-if="selected == 10"
-        v-bind:class="{
-          'animate-entrance': selected == 10,
-          'image--gallery': selected == 10,
-        }"
-      />
+  <div>
+    <div>
+      <section class="top-banner-section">
+        <div class="banner-image-div">
+        </div>
+
+        <div id="over" class="banner-overlay-div"></div>
+
+        <div class="banner-text-div">
+          <span class="f3 p1">Our Story</span> <br />
+          <hr style="width:70%; margin-top:-3px">
+        </div>
+      </section>
     </div>
-    <div class="image--selection">
-      <img src="@/assets/1-min.jpg" @click="selected = 1" class="image__item" />
-      <img src="@/assets/2-min.jpg" class="image__item" @click="selected = 2" />
-      <img src="@/assets/3.jpg" class="image__item" @click="selected = 3" />
-      <img src="@/assets/4.jpg" class="image__item" @click="selected = 4" />
-      <img src="@/assets/5.jpg" class="image__item" @click="selected = 5" />
-      <img src="@/assets/6.jpg" class="image__item" @click="selected = 6" />
-      <img src="@/assets/7.jpg" class="image__item" @click="selected = 7" />
-      <img src="@/assets/8.jpg" class="image__item" @click="selected = 8" />
-      <img src="@/assets/9.jpg" class="image__item" @click="selected = 9" />
-      <img src="@/assets/10.jpg" class="image__item" @click="selected = 10" />
+    <div class="story-grid">
+      <div>
+        <div>
+          <span class="f2 p1">August 2013</span>
+        </div>
+        <div>
+          <span>Josh & Tess meet while working at the Bohemian Cafe in Kelowna, BC</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span class="f2 p1 mt-10">June 2016</span>
+        </div>
+        <div>
+          <span>Tess returns from first year university and deviously convinces Josh to finally date her - just for the summer!</span>
+          <br/>
+          <span>Josh is hesitant because he doesn't want to go to jail</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span class="f2 p1 mt-10">September 2016</span>
+        </div>
+        <div>
+          <span>Break things off due to the distance <br/> (Montreal to BC)</span>
+          <br />
+          <span>Josh lasts 8 days before deciding to do long distance...</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span class="f2 p1 mt-10">September 2017</span>
+        </div>
+        <div>
+          <span>Josh moves to Montreal to be with Tess after graduating from UBCO</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span class="f2 p1 mt-10">September 2018</span>
+        </div>
+        <div>
+          <span>Josh & Tess move in to their first appartment together in Montreal</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span class="f2 p1 mt-10">December 2018</span>
+        </div>
+        <div>
+          <span>We got Woody!</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span class="f2 p1 mt-10">May 2020</span>
+        </div>
+        <div>
+          <span>TESS SAYS YES!!!</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span class="f2 p1 mt-10">July 2020</span>
+        </div>
+        <div>
+          <span>Josh and Tess drive across the country after Tess finishes her degree at McGill</span>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <span class="f2 p1 mt-10">October 2020</span>
+        </div>
+        <div>
+          <span>Bought a house together!</span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -132,82 +109,127 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.mt-10{
+  margin-top:5rem;
+}
+.story-grid{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-rows: auto;
+  background: trnsparent;
+}
+.story-grid div {
+  display:grid;
+  grid-gap: 1rem;
+  text-align: center;
+  margin: auto;
+  z-index: 3;
+  color: #b6b6b6;
+  font-weight:bolder;
+}
+
 .main * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.gallery {
-  padding: 0 0.5rem;
-  height: 100vh;
+.f1{
+  font-size:1rem;
 }
-
-.image--gallery {
-  height: 32rem;
-  display: block;
-  margin: auto;
-  border: 5px solid #222;
-  object-fit: cover;
+.f2{
+  font-size:2rem;
 }
-
-.image--selection {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-  justify-content: center;
-  align-items: center;
-}
-
-.image__item {
-  width: 100%;
-  height: 8rem;
-  display: block;
-  margin: auto;
-  border: 5px solid #222;
-  object-fit: cover;
-  cursor: pointer;
-}
-.loader {
-  text-align: center;
-  margin-top: 20%;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-}
-
-.animate-entrance {
-  animation: BounceIn 0.8s;
-}
-
-@keyframes BounceIn {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+.f3{
+  font-size:3rem;
 }
 
 @media only screen and (max-width: 600px) {
-  .image--selection {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-    grid-gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
+  .top-banner-section{
+    height:87vh;
+    margin: 0;
+    grid-template-rows: 87vh;
   }
-  .image__item {
-    height: 15rem;
-    display: block;
-    margin: auto;
-    border: none;
-    object-fit: cover;
-  }
-  .image--gallery {
-    display: none;
+  main{
+    padding:0;
   }
 }
+.top-banner-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 94vh;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-content: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.banner-image-div {
+  grid-area: 1 / 1 / 2 / 2;
+  min-height: 100%;
+  z-index: 1;
+
+  background-image: url("~@/assets/boat-min.jpg");
+  object-fit: cover;
+  width:100vw;
+  max-width:100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  left:0;
+  top:0;
+}
+.banner-overlay-div {
+  grid-area: 1 / 1 / 2 / 2;
+  z-index: 2;
+}
+.banner-text-div {
+  grid-area: 1 / 1 / 2 / 2;
+  margin: auto;
+  font-size:2rem;
+  font-weight:bolder;
+  color: #b6b6b6;
+  text-align: center;
+  z-index: 3;
+}
+
+.banner-image {
+  display: grid;
+  height:100%;
+}
+.banner-image img{
+  object-fit: cover;
+  object-position: center;
+  min-width: 350px;
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+}
+.banner-image source {
+  display: none;
+}
+
+.banner-overlay-div {
+  display: grid;
+  max-width: 100%;
+  background: black;
+  background: rgba(0, 0, 0, 0.56);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top:0;
+  left:0;
+  object-fit: cover;
+  width:100vw;
+  max-width:100%;
+  height:100%;
+}
+
 </style>

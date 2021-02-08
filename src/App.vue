@@ -91,11 +91,17 @@ body {
   color: var(--text-primary);
   transition: background-color 300ms ease;
   font-family: 'Trirong', serif;
+  overflow-x: hidden;
 }
 
 main {
   padding: 1rem;
   
+}
+
+hr{
+  border-color: #b6b6b6;
+  color: #b6b6b6;
 }
 
 #app{
