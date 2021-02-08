@@ -63,7 +63,7 @@
           <span class="f2 p1 mt-10">December 2018</span>
         </div>
         <div>
-          <span>We got Woody!</span>
+          <span>We got our boy Woody!</span>
         </div>
       </div>
       <div>
@@ -88,9 +88,18 @@
           <span class="f2 p1 mt-10">October 2020</span>
         </div>
         <div>
-          <span>Bought a house together!</span>
+          <span>Bought the treehouse!<br />Key feature being a big yard for woody</span>
         </div>
       </div>
+      <div>
+        <div>
+          <span class="f2 p1 mt-10">May 2021</span>
+        </div>
+        <div class="mb-10">
+          <span>May I present to you Mr and Mrs. Dollinger!</span>
+        </div>
+      </div>
+      <div></div>
     </div>
   </div>
 </template>
@@ -113,6 +122,9 @@ export default {
 .mt-10{
   margin-top:5rem;
 }
+.mb-10 {
+  margin-bottom: 5rem;;
+}
 .story-grid{
   display: grid;
   grid-gap: 1rem;
@@ -133,6 +145,9 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.p1{
+  font-family: 'Poiret One', cursive;
 }
 
 .f1{
