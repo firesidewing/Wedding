@@ -7,6 +7,13 @@
         </div>
       </div>
     </div>
+    <div class="center mb">
+      <p>Current BC Guidlines dictate that only 10 people including the bride/groom and marriage commissioner can be present at the ceremony.</p>
+      <p>For our far away friends: contact us before booking travel.</p>
+      <a href="http://www.bccdc.ca/health-info/diseases-conditions/covid-19/event-planning#:~:text=Funerals%20and%20weddings%20may%20proceed,to%20less%20than%2050%20people">
+        Current Covid Restrictions
+      </a>
+    </div>
     <div class="center">
       <p class="p1 f2">Hope you can make it!</p>
       <p>We will be closely monitoring COVID restrictions and will adhere to provincial guidlines for our wedding.</p>
@@ -143,6 +150,14 @@ export default {
 </script>
 
 <style>
+.mb{
+  margin-bottom:3rem;
+}
+a{
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: bold;
+}
 form div {
   display: grid;
   grid-gap: 2rem;

@@ -1,7 +1,14 @@
 <template>
     <div>
+         <div class="center">
+      <p>Current BC Guidlines dictate that only 10 people including the bride/groom and marriage commissioner can be present at the ceremony.</p>
+      <p>For our far away friends: contact us before booking travel.</p>
+      <a href="http://www.bccdc.ca/health-info/diseases-conditions/covid-19/event-planning#:~:text=Funerals%20and%20weddings%20may%20proceed,to%20less%20than%2050%20people">
+        Current Covid Restrictions
+      </a>
+    </div>
         <div class="map-link">
-            <p class="p1">Location</p>
+            <h3 class="p1 mt-15">Location</h3>
             <iframe v-if="IsMobile" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.4474785454763!2d-119.2496007842591!3d50.71163697951221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537ef45f9d66eb2f%3A0xaf13fca1262f6888!2s3270%2016%20Ave%20NE%2C%20Salmon%20Arm%2C%20BC%20V1E%202Y7!5e0!3m2!1sen!2sca!4v1612750144598!5m2!1sen!2sca" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <iframe v-else src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.4474785454763!2d-119.2496007842591!3d50.71163697951221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537ef45f9d66eb2f%3A0xaf13fca1262f6888!2s3270%2016%20Ave%20NE%2C%20Salmon%20Arm%2C%20BC%20V1E%202Y7!5e0!3m2!1sen!2sca!4v1612750144598!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>    
@@ -23,6 +30,9 @@ export default {
 </script>
 
 <style>
+.mt-15{
+    margin-top:5rem;
+}
 .p1{
   font-family: 'Poiret One', cursive;
 }
