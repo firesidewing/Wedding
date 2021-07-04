@@ -618,6 +618,15 @@
           width="3374"
           height="5071"
         />
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">
+        <span>After</span>
+      </div>
+
+      <div class="images">
         <img
           loading="lazy"
           src="https://by3301files.storage.live.com/y4mk27Y3RX6zzoE0puyxbHpDaj3emSEi2OTzFcl6YJ3Web2A-GSxfSwiOVcrvJ58wY1n1ufNPHGHL5kkrASW_R9JwgfAsFOHN8br4fwD7njQGqPJZsf9iy9tq5ab1KHFv5iv5e_G-gqgfGjwLOa8OoeESsjquHxUTmu1U7tkVFtd1ouKZqDwPMhsw6XYSm7R6QF?width=3677&height=5526&cropmode=none"
