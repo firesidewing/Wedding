@@ -1,5 +1,14 @@
 <template>
   <div class="container">
+    <iframe
+      title="vimeo-player"
+      src="https://player.vimeo.com/video/572862224?h=41bf37f84e"
+      frameborder="0"
+      v-bind:width="Width"
+      v-bind:height="Height"
+      allowfullscreen
+    ></iframe>
+
     <div class="section">
       <div class="title">
         <span>Setup</span>
@@ -755,91 +764,109 @@
         />
 
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4mAVmmpOMgcrlkN8YlzEo1AJclxIgNLDlirg7t4MtaBQQ4UtZwlyMzxoIB_2WXYjOs6eIb4CQtFxhpHIKuGTxGBsVw9Yz-vMXkv1MiZBV5eTaLXKDKfdPp-vfE84TN5_b5E93djUNAk6GIUxvq_tT9-mhOCgM0-8NHoTcIfrJk9zfKHVhUwkMtBrBC4Q4kNCMe?width=5914&height=3935&cropmode=none"
           width="5914"
           height="3935"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4msX8DbRKY7BLKj0FweMlMVUGiTgVyYS7dy7a29vwaaxgbvfL5cSAeU0ypZaOwd6xBdkiDPnbEwljBONZ8MZxKjkb8n7wLbxJfRCToAuOIYqCwx8QtW7jpnf4cLCGTK9B_BWATDoSYV2O_ttMXqdKO_H6h5X2kHrMVhzwM66JQ_QFXqTe_cyzXBRYX2GPCRDfw?width=5777&height=3844&cropmode=none"
           width="5777"
           height="3844"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4m5w9Zx7nn6nZ6OgmKrHji3GwY5Q74eqmUDfYep76RrB2P6e9lMt-jqKjahlFlDOHsIUG2heyciOg6QFj87KlJLz6ihpF-foDg0L5f87DHH-S2aPddGWjCi5YlCT_1RIUQLkqPra9qhOHDvIvjqIaK5ExqzYqGLdyqG1wFAKw-VkPlSQmzbOX1X_CqSsAlzIUw?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4m9NB39s4ZNkhlAzz4nuwhvdee1Lskcr34x9_UwAphebQehaf4fxbLHfKS6-qV4XMFsfzuhpCg1jHT9sLEZfsaxEML4qezfJx-guuDt_yVneTGSK3SjKdZNWIOWnso6DW2o1pd5IxjlpfzHdnW-0_cJQjKTpsC42pjG2T0gEFqC_lnh-haDaFKFkPcQlQQqH2g?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4mjnQXkajTdf8PXngtTZl19QTs9VV5mLi9B1TttQb9-SJZdxd44aCC972kZaYZbZQNWj_5xJvHYxh2yOTwoEw8AjJEVCdW_aPQJMR5D24W4Kz0YMJzQHCCZ0w4XVqH1w1aQ1gguEFsTa6ZTqZWD054ve5zXAA5phqwg2DtpJ41vt67C_UzAFiISF_I5M_8lTKb?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4mon8lFrPx8p97XHCjIrIM1z7X6nHx4XvN4yNSWvUNuvaAe76nPMlPAuWaVs4LcOIpu04-H6fyEIKj9GhdNbULNx7fBBUZD_6mZuQTrFceNiuSqAhzoTcUFvNnOXTS7GX-3x8W_qw2OOfzDcL0I74Gg81D1V0wdK-N6cgW1jPGTXy7UWkPMkJ0zMtgnadEPYwr?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4meTBKzNCmC7bqXfwZlGx5UX-VQEcNmSRehaO811rVb5RHCxUW05jji3wofixm2TXAWNiyCSHjj4sTNu0N40qmvi7YA_Skt-ySnf0LtZZNOQQqI3o_UBaH_CpIp6SGI4G354dTELK7AhvJ1HaNA69aHFJ9dcmBbtAoYwz22ywdIvkHe7_o9uKHnLNwwbv8Ww__?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4mDRGwl482MCWt1hpelP20fM7Mw7ZfBstPPruc9MsXnqDS8Fn-PLYVWPpSQ7D0rAbUCvPdqsT71n1HNsLGC-mKuXtWyfrG1Pe5oZV1UyDg9WbEiv_A9VTBASVqDL2XtK7OhGwXAurnQD7g_b7d9x7X9UYsLza9z1ksBZlcCGHwdvliZ_2l51tUu5Tr36OGIJik?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4mXvgkOJfwc9hiGKsA34keqF3JPmfy8AExurDLJfdWYAy3XxAtyE9_o5mA3-0OGVElaiuP7MvAAAM0LtPoG5b8_yzKrQWdnsTkuJjuvoARIHFXhldWdc7w05AJYxYroSyI00UTHLL3N4XBcDf7s_m39DxU0YwMxoE7FiOVZo8ZFv7prUN84iEF-HEpoRQNJ88A?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4mox54lbKTlspMGgjISqvBz2fac3MosBLDFOGAYubrbH_bf8LXaJHOnNjmMv9fsppyYtCldCNhkfQZKGg37oNknueEE29z8hnu0moPFdTV0tUtps2Cjus1blHENobGdUhQuBjyRiNmoOj88I4S0BI64APkQcnrEhciv9ixiW0vJNV-9UxHi_5Izyou7uvoa32H?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4muaWbjwo0LkmDbJxBUc3gh1ggqjlXluAK9R4MXVwSEFSlwFc2zDpFKf2opjB1FlmTndZ5T5LUZxIDJJRe7GIlNeC3qawQr-cWZG92xKW4aO0uAlI7Vzf280cX324LWG1fSxA2trvH-NCVSBazWSAJVFyrJu_Xo8V2xtn6of-L2SEM-1KYhTmFv3rFduNngZM9?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4m81lRgRjwwfTzNojC2Z73avii5vV1ZOOtuEA-j5DjOIAxf2pSleP8ilx6Sv2LBrFXt3nqq3U6s9PGtwa3rWwpNjj86vJDIbwlre8ceJhPWtJymhnqq7jz8UrFlXg4VyvPVK6vqdFH7y0LC3eEocUwKqyvRYahZ0UWvIV-CDxbfcYvxGo2d3XPxU5lAaIkMSmJ?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4mixowcxjGEWM8eQ9VYjqKiSfW-XhtaLY70VgcZMqL_-26QUAkvk8oSYS_3qEeE_lkKAqCy4AveaPoelTxH5gbuz0ZXrTB2QA4CbEU0M6YwF47yitQTC135dAabVRsZo8Y9ojtxUKOFxWhji_QF_IRDK-AWas6ECw4PG9p--R_VCDBiOe-iNEMZFssVuTBSvRU?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4mBlWHP3mCEMNtQjsxm31djy-xcj85O3eiCitbiBgNoIzjDqJ7ITt4LrZnu71rFBR6oX8tRfbk9AF9Exe1m_-5L7F1h7OdlIEf1Zh6n4epBY1NOieQ5hMIt57l31KMH6DBhnQHF_HPxZtq3EICRaCpyFPP919jOYZ3xOUrFMGvXSMn3Ke8gz8F-BxSv-cO68hZ?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4mF8UipOHUj6udUoo6Due-M7YBzE6LLjjIW6kSwnD6S1crozpQoNlIdWevV5gcU1YYjcFhHO39qMeOpx0AWNDtCUFCALh6pgZFflmMw_QiHfqyFM7FlTsRD0STRra0bVxTRSX1P9cW5i8pGkzsoUypHvlqbN36M6le5KTtrZkY2TdBh9IRVIIt6MYzCn59o1lh?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4mF_gOemqOGEmU09o30RFy8YWV-tb7Rl0mis7zOw7JhJ6DODilXpvxVKFs6oYwI-6tBnLKw5YugZWl3DBfir0q7b7v8xq7YfRb3MknjwBEFYfXlsjV5-Egr1WU8YMCvx5w-qefQ4Hu39oFcFUbC2SaU9_aV_7fsWdnT89DnIb3E34jJkX6-Lzr7tvNbPklRZaC?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4mk4ftEII_zoTYoGKeYCmkDN9hrXmN89Noat1kQADsktpAvKRSINaj8bjPB5M0mT5HgHdY2TcIDcM6APjbPjArBuE4rZpbfExk1AyYLmoQBR-7j-d2h8A6BiKdI-7SW6lk2UHeaGOIh0TuBPHtDaPV8AKL1Eglfi16ofr8Hcr3sChksKh8K-_ZqnuSXeH5lc9B?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
         />
         <img
+          loading="lazy"
           src="https://by3301files.storage.live.com/y4mHsDmthnCvBl5dmaN55WFIyfcQoL2PdHo4ohVfD99mPfNJ_5ZP1kWuN7vFoZq1TfDYp-2ft88JbqcrDvg9skGf5cKCkWIAzHR3W-u9_vgJk2l-kMTiCLAZxA33ndUL7WGaFuVBxeeffvE_U8mj8OE5M4_gaRjkYYv_bKuXb5322Q8rD2UvYCXDEp7cyG84eiW?width=6048&height=4024&cropmode=none"
           width="6048"
           height="4024"
@@ -859,7 +886,10 @@ export default {
     };
   },
   mounted() {
-    this.Width = window.innerWidth / 2;
+    this.Width =
+      window.innerWidth / 2 > 600
+        ? window.innerWidth / 2
+        : window.innerWidth / 1.25;
     this.Height = screen.height / 4;
   },
   computed: {
@@ -877,7 +907,10 @@ export default {
   grid-template-rows: auto;
   padding: 1rem;
 }
-
+.container iframe {
+  align-self: center;
+  justify-self: center;
+}
 .section {
 }
 
